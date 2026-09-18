@@ -93,7 +93,7 @@ def shortest_path(source, target):
     """
     if source==target:
         return []
-    start=Node(state=source,parent=None,action=None)
+    start=Node(state=source,parent=None,actiotictactoen=None)
     frontier=QueueFrontier()
     frontier.add(start)
     explored=set()
@@ -103,7 +103,7 @@ def shortest_path(source, target):
 
         if frontier.empty():
 
-         
+
         node=frontier.remove()
         explored.add(node.state)
         for movie,person in neighbors_for_person(node.state):
